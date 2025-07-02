@@ -2,19 +2,19 @@
 const Gallery = () => {
     const projects = [
         {
-            title: "[Project 1 Name]",
+            title: "Rotaract Club Website",
             description: "[Project 1 Description - Briefly explain what this project is about and its impact.]",
-            tech: "[Technologies Used]"
+            tech: "HTML5 | CSS3 | JavaScript | React | Tailwind CSS"
         },
         {
-            title: "[Project 2 Name]",
+            title: "Personal Portfolio Website",
             description: "[Project 2 Description - Briefly explain what this project is about and its impact.]",
-            tech: "[Technologies Used]"
+            tech: "HTML5 | CSS3 | JavaScript | React | Tailwind CSS"
         },
         {
-            title: "[Project 3 Name]",
+            title: "E-Commerce Platform",
             description: "[Project 3 Description - Briefly explain what this project is about and its impact.]",
-            tech: "[Technologies Used]"
+            tech: "HTML5 | CSS3 | JavaScript | Python | SQL | React | Bootstrap | Node.js | Express.js | Django | API "
         },
         {
             title: "[Project 4 Name]",

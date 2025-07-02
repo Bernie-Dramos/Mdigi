@@ -18,6 +18,29 @@ input:focus, textarea:focus {
   font-family: "Space Grotesk", "Noto Sans", sans-serif;
 }
 
+/* Sticky footer for all pages */
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-bg, .layout-container {
+  flex: 1 0 auto;
+}
+
+.sticky-footer {
+  margin-top: auto;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+
 /* Logo SVG */
 .logo-svg {
   width: 1rem;

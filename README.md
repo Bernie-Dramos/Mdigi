@@ -1,2 +1,2 @@
-# Moz-Devs
+# Mdigi Solutions = MozDigital Solutions
 
