@@ -28,8 +28,8 @@ input:focus, textarea:focus {
 
 /* Hero Section */
 .hero-image-container {
-  width: 960px;
-  height: 512px;
+  width: 1200px;
+  height: 750px;
   overflow: hidden;
   border-radius: 0.75rem;
   display: flex;
@@ -38,16 +38,22 @@ input:focus, textarea:focus {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  /* Center the container horizontally and vertically in its parent */
+  top: 0;
+  left: -125px;
+  right: 0;
 }
 
 .hero-image-bg {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  width: 1200px;
+  height: 750px;
   object-fit: cover;
   z-index: 0;
   border-radius: 0.75rem;
+  transform: translate(-50%, -50%);
 }
 
 .hero-image-gradient {
@@ -72,12 +78,33 @@ input:focus, textarea:focus {
   gap: 1.5rem;
 }
 
+.hero-content-bottom-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  gap: 1.5rem;
+  height: auto;
+  text-align: left;
+}
+
 .hero-title {
   color: #fff;
   font-size: 2.25rem;
   font-weight: 900;
   text-align: center;
   text-shadow: 0 2px 8px #000;
+}
+
+.hero-title.text-left {
+  text-align: left !important;
+  width: 100%;
 }
 
 .hero-subtitle {
@@ -88,15 +115,30 @@ input:focus, textarea:focus {
   text-shadow: 0 1px 4px #000;
 }
 
+.hero-subtitle.text-left {
+  text-align: left !important;
+  width: 100%;
+}
+
 .hero-buttons-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1rem;
   justify-content: center;
-  background: #23272e;
   border-radius: 0.75rem;
   padding: 1rem 2rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+.hero-buttons-align-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: flex-start;
+  border-radius: 0.75rem;
+  padding: 1rem 2rem 1rem 0;
   box-shadow: 0 4px 24px rgba(0,0,0,0.15);
 }
 
@@ -129,48 +171,209 @@ input:focus, textarea:focus {
   text-overflow: ellipsis;
 }
 
-/* Footer styles */
-.footer-content {
+/* Navbar styles for contacts.html */
+.navbar-header {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 2.5rem 1.25rem;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  border-bottom: 1px solid #283039;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: #1f2937;
+  background: #1f2937;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+}
+
+.navbar-title {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.25rem;
+}
+
+.navbar-links {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.navbar-link-group {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+}
+
+.navbar-link {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navbar-link:hover {
+  color: #22d3ee;
+}
+
+.navbar-btn-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navbar-contact-btn {
+  display: flex;
+  min-width: 84px;
+  max-width: 480px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  height: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: #0c77f2;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+}
+
+/* Contact Section styles */
+.contact-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #1f2937, #111827);
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.contact-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-form-card {
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: #1f2937;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 32px rgba(0,0,0,0.25);
+}
+
+.contact-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #d1d5db;
+}
+
+.contact-input {
+  margin-top: 0.25rem;
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #374151;
+  border-radius: 0.375rem;
+  color: #fff;
+  outline: none;
+  border: none;
+  transition: box-shadow 0.3s;
+}
+
+.contact-input:focus {
+  box-shadow: 0 0 0 2px #22d3ee;
+}
+
+.contact-submit-btn {
+  width: 100%;
+  background: #22d3ee;
+  color: #111827;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: background 0.2s;
+  border: none;
+  margin-top: 1rem;
+}
+
+.contact-submit-btn:hover {
+  background: #38bdf8;
+}
+
+.contact-details {
+  margin-top: 2rem;
   text-align: center;
 }
 
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
+.contact-details-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
-.footer-link {
-  color: #9caaba;
-  font-size: 1rem;
-  font-weight: 400;
-  min-width: 10rem;
+.contact-details-text {
+  color: #d1d5db;
+  margin-bottom: 0.25rem;
+}
+
+.contact-details-link {
+  color: #d1d5db;
   text-decoration: none;
-  line-height: normal;
+  transition: color 0.2s;
 }
 
-.footer-social {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+.contact-details-link:hover {
+  color: #22d3ee;
 }
 
-.footer-social-icon {
-  color: #9caaba;
-  display: flex;
-  align-items: center;
+/* Footer styles for contacts.html */
+.contact-footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: #1f2937;
+  text-align: center;
 }
 
-.footer-copyright {
-  color: #9caaba;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: normal;
+.contact-footer-container {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.contact-footer-text {
+  color: #d1d5db;
 }

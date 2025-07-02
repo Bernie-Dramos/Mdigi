@@ -133,3 +133,53 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// Only run this code if on contacts.html
+if (document.querySelector('.contact-section')) {
+  // React component for Navbar
+  function Navbar() {
+    return (
+      <nav className="fixed top-0 w-full bg-gray-800 bg-opacity-90 z-50 py-4">
+        <div className="container mx-auto flex justify-between items-center px-4">
+          <div className="text-2xl font-bold text-cyan-400">STM</div>
+          <div className="space-x-6">
+            <a href="index.html#home" className="hover:text-cyan-400 transition-colors">Home</a>
+            <a href="index.html#about" className="hover:text-cyan-400 transition-colors">About</a>
+            <a href="index.html#projects" className="hover:text-cyan-400 transition-colors">Projects</a>
+            <a href="#contact" className="hover:text-cyan-400 transition-colors">Contact</a>
+          </div>
+        </div>
+      </nav>
+    );
+  }
+
+  // Render Navbar if #navbar exists (if you want to use React for navbar)
+  if (document.getElementById('navbar')) {
+    ReactDOM.render(<Navbar />, document.getElementById('navbar'));
+  }
+
+  // GSAP Animations
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Slide-up animation for contact section
+  gsap.from(".animate-slide-up", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".animate-slide-up",
+      start: "top 80%",
+    },
+  });
+
+  // Simulate form submission
+  document.getElementById('submit-btn').addEventListener('click', () => {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    const mailtoLink = `mailto:[Your Email Address]?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+    window.location.href = mailtoLink;
+  });
+}

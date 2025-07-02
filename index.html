@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mdigi Solutions - Empowering Mozambique Through Technology</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <link href="media-queries.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
-    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.21.4/babel.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Mdigi Solutions</title>
+  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.20.15/babel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media-queries.css">
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
   <div class="main-bg">
     <div class="layout-container flex h-full grow flex-col">
       <!-- Navigation Bar -->
-      <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#283039] px-10 py-3">
+      <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#283039] px-10 py-3 bg-gray-800 bg-opacity-90">
         <div class="flex items-center gap-4 text-white">
           <div>
-            
+            <!-- Optionally add logo SVG here if desired -->
           </div>
           <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Mdigi Solutions</h2>
         </div>
         <div class="flex flex-1 justify-end gap-8">
           <div class="flex items-center gap-9">
-            <a class="text-white text-sm font-medium leading-normal" href="#">Home</a>
-            <a class="text-white text-sm font-medium leading-normal" href="#">About Us</a>
-            <a class="text-white text-sm font-medium leading-normal" href="#">Projects</a>
+            <a class="text-white text-sm font-medium leading-normal" href="index.html#home">Home</a>
+            <a class="text-white text-sm font-medium leading-normal" href="index.html#about">About Us</a>
+            <a class="text-white text-sm font-medium leading-normal" href="index.html#projects">Projects</a>
           </div>
           <div class="flex gap-2">
             <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#0c77f2] text-white text-sm font-bold leading-normal "
-            >
+              class="hero-btn hero-btn-primary"
+              onclick="window.location.href='contacts.html'">
               <span class="truncate">Contact Us</span>
             </button>
           </div>
@@ -55,14 +53,14 @@
               />
               <div class="hero-image-gradient"></div>
               <!-- Content on top of image -->
-              <div class="hero-content">
-                <h1 class="hero-title">
+              <div class="hero-content hero-content-bottom-left">
+                <h1 class="hero-title text-left">
                   Innovate with Mdigi Solutions
                 </h1>
-                <h2 class="hero-subtitle">
+                <h2 class="hero-subtitle text-left">
                   Empowering businesses with cutting-edge technology solutions for a smarter future.
                 </h2>
-                <div class="hero-buttons-container">
+                <div class="hero-buttons-container hero-buttons-align-left">
                   <button class="hero-btn hero-btn-primary">
                     <span class="hero-btn-text">Explore Products</span>
                   </button>
@@ -76,56 +74,41 @@
         </div>
       </section>  
 
-      <!-- Core Technologies Section -->
+      <!-- Core Principles Section -->
       <section>
         <div class="flex flex-col gap-10 px-4 py-10">
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4 items-center text-center">
             <h1 class="text-white font-bold text-4xl font-black">
-              Our Core Technologies
+              Our Core Principals
             </h1>
-            <p class="text-white text-base font-normal leading-normal max-w-[720px]">
-              We specialize in developing advanced solutions across various domains to meet the evolving needs of modern businesses.
+            <p class="text-white text-base font-normal leading-normal max-w-[200px]">
+              We specialize in developing advanced solutions across various domains and areas to aid the evolving needs of modern businesses.
             </p>
           </div>
-          <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
-            <div class="flex flex-1 gap-3 rounded-lg border border-[#3b4754] bg-[#1b2127] p-4 flex-col">
-              <div class="text-white" data-icon="Cloud" data-size="24px" data-weight="regular">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                  <path
-                    d="M160,40A88.09,88.09,0,0,0,81.29,88.67,64,64,0,1,0,72,216h88a88,88,0,0,0,0-176Zm0,160H72a48,48,0,0,1,0-96c1.1,0,2.2,0,3.29.11A88,88,0,0,0,72,128a8,8,0,0,0,16,0,72,72,0,1,1,72,72Z"
-                  ></path>
-                </svg>
+          <div class="flex flex-row flex-wrap gap-6 justify-center items-start">
+            <div class="flex flex-col gap-2 rounded-lg border border-[#3b4754] bg-[#1b2127] p-4 w-auto max-w-xs items-center text-center">
+              <!-- Icon placeholder -->
+              <div class="mb-2 flex justify-center">
+                <img src="assets/website-icon.png" alt="Website Icon" class="h-10 w-10 object-contain" />
               </div>
-              <div class="flex flex-col gap-1">
-                <h2 class="text-white text-base font-bold leading-tight">Cloud Computing</h2>
-                <p class="text-[#9caaba] text-sm font-normal leading-normal">Scalable and reliable cloud infrastructure for seamless operations.</p>
-              </div>
+              <h2 class="text-white text-base font-bold">Website Creation</h2>
+              <p class="text-[#9caaba] text-sm font-normal leading-normal">Scalable and reliable cloud infrastructure for seamless operations.</p>
             </div>
-            <div class="flex flex-1 gap-3 rounded-lg border border-[#3b4754] bg-[#1b2127] p-4 flex-col">
-              <div class="text-white" data-icon="Database" data-size="24px" data-weight="regular">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                  <path
-                    d="M128,24C74.17,24,32,48.6,32,80v96c0,31.4,42.17,56,96,56s96-24.6,96-56V80C224,48.6,181.83,24,128,24Zm80,104c0,9.62-7.88,19.43-21.61,26.92C170.93,163.35,150.19,168,128,168s-42.93-4.65-58.39-13.08C55.88,147.43,48,137.62,48,128V111.36c17.06,15,46.23,24.64,80,24.64s62.94-9.68,80-24.64ZM69.61,53.08C85.07,44.65,105.81,40,128,40s42.93,4.65,58.39,13.08C200.12,60.57,208,70.38,208,80s-7.88,19.43-21.61,26.92C170.93,115.35,150.19,120,128,120s-42.93-4.65-58.39-13.08C55.88,99.43,48,89.62,48,80S55.88,60.57,69.61,53.08ZM186.39,202.92C170.93,211.35,150.19,216,128,216s-42.93-4.65-58.39-13.08C55.88,195.43,48,185.62,48,176V159.36c17.06,15,46.23,24.64,80,24.64s62.94-9.68,80-24.64V176C208,185.62,200.12,195.43,186.39,202.92Z"
-                  ></path>
-                </svg>
+            <div class="flex flex-col gap-2 rounded-lg border border-[#3b4754] bg-[#1b2127] p-4 w-auto max-w-xs items-center text-center">
+              <!-- Icon placeholder -->
+              <div class="mb-2 flex justify-center">
+                <img src="assets/digital-icon.png" alt="Digital Needs Icon" class="h-10 w-10 object-contain" />
               </div>
-              <div class="flex flex-col gap-1">
-                <h2 class="text-white text-base font-bold leading-tight">Data Management</h2>
-                <p class="text-[#9caaba] text-sm font-normal leading-normal">Efficient data storage and management solutions for optimal performance.</p>
-              </div>
+              <h2 class="text-white text-base font-bold">Digital Needs</h2>
+              <p class="text-[#9caaba] text-sm font-normal leading-normal">Efficient data storage and management solutions for optimal performance.</p>
             </div>
-            <div class="flex flex-1 gap-3 rounded-lg border border-[#3b4754] bg-[#1b2127] p-4 flex-col">
-              <div class="text-white" data-icon="ShieldCheck" data-size="24px" data-weight="regular">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                  <path
-                    d="M208,40H48A16,16,0,0,0,32,56v58.78c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56H208ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.68l50.34-50.34a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z"
-                  ></path>
-                </svg>
+            <div class="flex flex-col gap-2 rounded-lg border border-[#3b4754] bg-[#1b2127] p-4 w-auto max-w-xs items-center text-center">
+              <!-- Icon placeholder -->
+              <div class="mb-2 flex justify-center">
+                <img src="assets/app-icon.png" alt="Application Icon" class="h-10 w-10 object-contain" />
               </div>
-              <div class="flex flex-col gap-1">
-                <h2 class="text-white text-base font-bold leading-tight">Cybersecurity</h2>
-                <p class="text-[#9caaba] text-sm font-normal leading-normal">Robust security measures to protect your digital assets.</p>
-              </div>
+              <h2 class="text-white text-base font-bold">Application Creation</h2>
+              <p class="text-[#9caaba] text-sm font-normal leading-normal">Robust security measures to protect your digital assets.</p>
             </div>
           </div>
         </div>
