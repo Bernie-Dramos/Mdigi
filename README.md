@@ -1,2 +1,2 @@
-# Mdigi Solutions = MozDigital Solutions
+# MZT Solutions = MozTech Solutions
 
