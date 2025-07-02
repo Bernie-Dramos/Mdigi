@@ -22,12 +22,10 @@
       <!-- Navigation Bar -->
       <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#283039] px-10 py-3 bg-gray-800 bg-opacity-90">
         <div class="flex items-center gap-4 text-white">
-          <div>
-            <!-- Optionally add logo SVG here if desired -->
-          </div>
+          <div></div>
           <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">MZT Solutions</h2>
         </div>
-        <div class="navbar-links">
+        <nav class="navbar-links">
           <div class="navbar-link-group">
             <a class="navbar-link" href="index.html#home">Home</a>
             <a class="navbar-link" href="index.html#about">About Us</a>
@@ -35,13 +33,11 @@
             <a class="navbar-link" href="services.html">Services</a>
           </div>
           <div class="flex gap-2">
-            <button
-              class="hero-btn hero-btn-primary"
-              onclick="window.location.href='contacts.html'">
+            <button class="hero-btn hero-btn-primary" onclick="window.location.href='contacts.html'">
               <span class="truncate">Contact Us</span>
             </button>
           </div>
-        </div>
+        </nav>
       </header>
 
       <!-- Hero Section -->
@@ -49,14 +45,12 @@
         <div class="w-full max-w-5xl flex flex-1 justify-center py-10 px-4 md:px-10 relative">
           <div class="layout-content-container flex flex-col w-full flex-1 relative">
             <div class="hero-image-container">
-              <!-- Full-size image as background -->
               <img 
                 src="assets/maputo-skyline.jpg" 
-                alt="Maputo city skyline at dusk with illuminated buildings, busy streets with light trails from moving cars, a suspension bridge in the background, and a vibrant, energetic atmosphere over the city" 
+                alt="Maputo city skyline at dusk with illuminated buildings, busy streets, light trails from cars, and a suspension bridge" 
                 class="hero-image-bg"
               />
               <div class="hero-image-gradient"></div>
-              <!-- Content on top of image -->
               <div class="hero-content hero-content-bottom-left">
                 <h1 class="hero-title text-left">
                   Innovate with MZT Solutions
@@ -65,8 +59,7 @@
                   Empowering businesses with cutting-edge technology solutions for a smarter future.
                 </h2>
                 <div class="hero-buttons-container hero-buttons-align-left">
-                  <button class="hero-btn hero-btn-primary"
-                    onclick="window.location.href='services.html'">
+                  <button class="hero-btn hero-btn-primary" onclick="window.location.href='services.html'">
                     <span class="hero-btn-text">Explore Services</span>
                   </button>
                 </div>
@@ -82,10 +75,6 @@
           <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-cyan-400">About MZT Solutions</h2>
           <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="about-content">
-              <!-- <h3 class="text-2xl font-bold mb-4 text-green-400">Our Vision</h3>
-              <p class="text-gray-300 mb-8">
-                Our vision is to spearhead a transformative technological digital era in Mozambique, driving unprecedented growth and innovation across the region.
-              </p> -->
               <h3 class="text-2xl font-bold mb-4 text-green-400">Our Mission</h3>
               <p class="text-gray-300 mb-8">
                 To empower Mozambican communities and businesses by delivering cutting-edge digital solutions, fostering technological innovation, and building a 
@@ -153,12 +142,12 @@
             <div class="footer-social flex flex-wrap justify-center gap-4 mb-4">
               <a href="#">
                 <div class="footer-social-icon" data-icon="LinkedIn Logo" data-size="24px" data-weight="regular">
-                  <img src="assets/linkedin.png" alt="Instagram logo" style="width: 100px; height: 100px" />
+                  <img src="assets/linkedin.png" alt="LinkedIn logo" width="100" height="100" />
                 </div>
               </a>
               <a href="#">
                 <div class="footer-social-icon" data-icon="Instagram Logo" data-size="24px" data-weight="regular">
-                  <img src="assets/insta.png" alt="Instagram logo" style="width: 100px; height: 100px" />
+                  <img src="assets/insta.png" alt="Instagram logo" width="100" height="100" />
                 </div>
               </a>
             </div>
@@ -169,7 +158,8 @@
         </div>
       </footer>
 
-  <!-- Gallery React Component and GSAP Animations -->
-  <script type="text/babel" src="main.js"></script>
+      <script type="text/babel" src="main.js"></script>
+    </div>
+  </div>
 </body>
 </html>
