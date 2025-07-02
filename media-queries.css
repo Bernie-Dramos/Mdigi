@@ -1,0 +1,257 @@
+/* Base styles are assumed to be mobile-first. */
+
+/* --- HERO SECTION --- */
+.hero-image-container,
+.hero-image-bg {
+  width: 100vw;
+  max-width: 1200px;
+  height: 60vw;
+  max-height: 750px;
+  min-height: 220px;
+}
+
+.hero-title {
+  font-size: 2rem;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+}
+
+/* --- NAVBAR --- */
+.navbar-header,
+header {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  gap: 0.5rem;
+}
+
+.navbar-links,
+.navbar-link-group {
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.navbar-links {
+  align-items: flex-start;
+}
+
+.navbar-link {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
+/* --- LAYOUT CONTAINER --- */
+.layout-container {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* --- ABOUT SECTION --- */
+#about .grid {
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+#about .grid > div {
+  min-width: 0;
+}
+
+/* --- PROJECTS GALLERY --- */
+#projects .max-w-4xl {
+  max-width: 100%;
+  padding: 0;
+}
+
+/* --- FOOTER --- */
+.footer-main {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.footer-links,
+.footer-social {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-social-icon img {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+/* --- CONTACT FORM --- */
+.contact-form-card {
+  padding: 1rem;
+}
+
+.contact-title {
+  font-size: 1.5rem;
+}
+
+/* --- BUTTONS --- */
+.hero-btn,
+.hero-btn-primary,
+.hero-btn-secondary,
+.contact-submit-btn {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+/* --- TEAM PHOTOS GRID --- */
+#about .grid.grid-cols-2 {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* Tablets (≥640px) */
+@media (min-width: 640px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1.125rem;
+  }
+  .navbar-header,
+  header {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .navbar-links,
+  .navbar-link-group {
+    flex-direction: row;
+    gap: 2rem;
+    width: auto;
+  }
+  .footer-links,
+  .footer-social {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  #about .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  #about .grid.grid-cols-2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .contact-form-card {
+    padding: 2rem;
+  }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+  .hero-image-container,
+  .hero-image-bg {
+    height: 400px;
+    min-height: 300px;
+  }
+  .layout-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .footer-main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Large devices (≥1024px) */
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+  .hero-image-container,
+  .hero-image-bg {
+    height: 600px;
+    min-height: 400px;
+  }
+  .layout-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .footer-main {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* Extra large devices (≥1280px) */
+@media (min-width: 1280px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+  .hero-subtitle {
+    font-size: 1.75rem;
+  }
+  .hero-image-container,
+  .hero-image-bg {
+    height: 750px;
+    min-height: 500px;
+  }
+}
+
+/* --- ACCESSIBILITY --- */
+/* Ensure focus outlines are visible for all interactive elements */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #22d3ee;
+  outline-offset: 2px;
+}
+
+/* --- UTILITY CLASSES FOR RESPONSIVENESS --- */
+.hide-mobile {
+  display: none !important;
+}
+@media (min-width: 640px) {
+  .hide-mobile {
+    display: initial !important;
+  }
+}
+.show-mobile {
+  display: initial !important;
+}
+@media (min-width: 640px) {
+  .show-mobile {
+    display: none !important;
+  }
+}
+
+/* --- IMAGE RESPONSIVENESS --- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- ALT TAGS (HTML REMINDER) --- */
+/*
+  Please ensure all <img> tags in your HTML use descriptive alt attributes, e.g.:
+  <img src="assets/webdev.png" alt="Website development icon" />
+  <img src="assets/consult.png" alt="Digital consulting icon" />
+  <img src="assets/linkedin.png" alt="LinkedIn logo" />
+  <img src="assets/insta.png" alt="Instagram logo" />
+  <img src="assets/maputo-skyline.jpg" alt="Maputo city skyline at dusk with illuminated buildings, busy streets, and a suspension bridge" />
+  <img src="..." alt="Team member photo" />
+*/
