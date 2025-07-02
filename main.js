@@ -3,23 +3,34 @@ const Gallery = () => {
     const projects = [
         {
             title: "Rotaract Club Website",
-            description: "[Project 1 Description - Briefly explain what this project is about and its impact.]",
-            tech: "HTML5 | CSS3 | JavaScript | React | Tailwind CSS"
+            description: "The Rotaract Club website, developed by our tech team, is a vibrant online platform for young adults aged 18+, promoting leadership and " +
+            "community service. It showcases the club's mission to drive positive change through local and global projects, featuring membership details, events," +
+            "and service areas like Community and International Service. Built with a focus on user engagement, it reflects our expertise in creating impactful" + 
+            "digital solutions.",
+            tech: "HTML5 | CSS3 | JavaScript | React | Tailwind CSS | Netlify"
         },
         {
             title: "Personal Portfolio Website",
-            description: "[Project 2 Description - Briefly explain what this project is about and its impact.]",
-            tech: "HTML5 | CSS3 | JavaScript | React | Tailwind CSS"
+            description: "The Bernardo Dramos Portfolio website, crafted by our tech team, is a sleek online showcase for a professional’s work, designed to highlight" + 
+            "skills and projects with a modern interface. Built with a focus on user experience, it features a dynamic layout with interactive elements, reflecting our" +
+            "expertise in creating engaging digital solutions. Hosted on Netlify, this project leverages cutting-edge technologies to deliver a responsive and efficient " +
+            "platform.",
+            tech: "HTML5 | CSS3 | JavaScript | React | Tailwind CSS | Netlify"
         },
         {
             title: "E-Commerce Platform",
-            description: "[Project 3 Description - Briefly explain what this project is about and its impact.]",
+            description: "The E-commerce Website, developed by our tech team, is a robust online shopping platform designed to offer a seamless shopping experience with" +
+            "secure payment options and real-time delivery updates. Featuring a responsive design and intuitive navigation, it showcases products, manages transactions," + 
+            "and integrates with leading payment gateways like Stripe and tracking systems like AfterShip. This project highlights our expertise in building scalable," + 
+            "customer-focused digital solutions with a focus on performance and security.",
             tech: "HTML5 | CSS3 | JavaScript | Python | SQL | React | Bootstrap | Node.js | Express.js | Django | API "
         },
         {
-            title: "[Project 4 Name]",
-            description: "[Project 4 Description - Briefly explain what this project is about and its impact.]",
-            tech: "[Technologies Used]"
+            title: "Coffee Shop Website",
+            description: "The Coffee Shop Website, created by our tech team, is a simple yet elegant online platform designed to showcase the cozy ambiance of the coffee shop," + 
+            "its diverse menu of beverages and treats, and its precise location. With an intuitive layout and responsive design, it provides customers with easy access to" +
+            "offerings and contact details, reflecting our expertise in crafting user-friendly digital solutions tailored to small businesses.",
+            tech: "HTML5 | CSS3 | JavaScript | React | Tailwind CSS | WordPress | API | Netlify"
         }
     ];
     
