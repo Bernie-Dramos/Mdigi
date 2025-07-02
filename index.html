@@ -3,146 +3,395 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moz Devs - Leading Technology Solutions in Mozambique</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Mdigi - Empowering Mozambique Through Technology</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="media-queries.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.21.4/babel.min.js"></script>
 </head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <h1>Moz Devs</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+<body class="bg-gray-900 text-gray-100 font-sans">
+  <div class="relative flex size-full min-h-screen flex-col bg-[#111418] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Bringing Mozambique into the Digital Age</h1>
-                <p>Leading technology solutions for the modern era</p>
-                <a href="contact.html" class="cta-button">Get Started</a>
-            </div>
+      <!-- Navigation Bar -->
+      <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#283039] px-10 py-3">
+        <div class="flex items-center gap-4 text-white">
+          <div class="size-4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.263 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z"
+                fill="currentColor"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.4485 13.8519C10.4749 13.9271 10.6203 14.246 11.379 14.7361C12.298 15.3298 13.7492 15.9145 15.6717 16.3735C18.0007 16.9296 20.8712 17.2655 24 17.2655C27.1288 17.2655 29.9993 16.9296 32.3283 16.3735C34.2508 15.9145 35.702 15.3298 36.621 14.7361C37.3796 14.246 37.5251 13.9271 37.5515 13.8519C37.5287 13.7876 37.4333 13.5973 37.0635 13.2931C36.5266 12.8516 35.6288 12.3647 34.343 11.9175C31.79 11.0295 28.1333 10.4437 24 10.4437C19.8667 10.4437 16.2099 11.0295 13.657 11.9175C12.3712 12.3647 11.4734 12.8516 10.9365 13.2931C10.5667 13.5973 10.4713 13.7876 10.4485 13.8519ZM37.5563 18.7877C36.3176 19.3925 34.8502 19.8839 33.2571 20.2642C30.5836 20.9025 27.3973 21.2655 24 21.2655C20.6027 21.2655 17.4164 20.9025 14.7429 20.2642C13.1498 19.8839 11.6824 19.3925 10.4436 18.7877V34.1275C10.4515 34.1545 10.5427 34.4867 11.379 35.027C12.298 35.6207 13.7492 36.2054 15.6717 36.6644C18.0007 37.2205 20.8712 37.5564 24 37.5564C27.1288 37.5564 29.9993 37.2205 32.3283 36.6644C34.2508 36.2054 35.702 35.6207 36.621 35.027C37.4573 34.4867 37.5485 34.1546 37.5563 34.1275V18.7877ZM41.5563 13.8546V34.1455C41.5563 36.1078 40.158 37.5042 38.7915 38.3869C37.3498 39.3182 35.4192 40.0389 33.2571 40.5551C30.5836 41.1934 27.3973 41.5564 24 41.5564C20.6027 41.5564 17.4164 41.1934 14.7429 40.5551C12.5808 40.0389 10.6502 39.3182 9.20848 38.3869C7.84205 37.5042 6.44365 36.1078 6.44365 34.1455L6.44365 13.8546C6.44365 12.2684 7.37223 11.0454 8.39581 10.2036C9.43325 9.3505 10.8137 8.67141 12.343 8.13948C15.4203 7.06909 19.5418 6.44366 24 6.44366C28.4582 6.44366 32.5797 7.06909 35.657 8.13948C37.1863 8.67141 38.5667 9.3505 39.6042 10.2036C40.6278 11.0454 41.5563 12.2684 41.5563 13.8546Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Mdigi</h2>
         </div>
-    </section>
+        <div class="flex flex-1 justify-end gap-8">
+          <div class="flex items-center gap-9">
+            <a class="text-white text-sm font-medium leading-normal" href="#">Home</a>
+            <a class="text-white text-sm font-medium leading-normal" href="#">About Us</a>
+            <a class="text-white text-sm font-medium leading-normal" href="#">Projects</a>
+          </div>
+          <div class="flex gap-2">
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#0c77f2] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Contact Us</span>
+            </button>
+          </div>
+        </div>
+      </header>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Moz Dev</h2>
+      <!-- Hero Section -->
+      <section id="home" class="relative bg-gray-900 text-white">
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div class="relative flex flex-col gap-6 @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10 overflow-visible">
+                  <!-- Personalized image as background, no size restriction -->
+                  <img 
+                    src="maputo-skyline.jpg" 
+                    alt="Personalized Hero" 
+                    class="relative z-0"
+                    style="width:auto; height:auto; max-width:100%; max-height:100%; display:block;"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-black/10 to-black/40 z-10 pointer-events-none"></div>
+                  <div class="flex flex-col gap-2 text-left relative z-20 -mt-32">
+                    <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                      Innovate with Mdigi
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      Empowering businesses with cutting-edge technology solutions for a smarter future.
+                    </h2>
+                  </div>
+                  <div class="flex-wrap gap-3 flex relative z-20">
+                    <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0c77f2] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+                      <span class="truncate">Explore Products</span>
+                    </button>
+                    <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#283039] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+                      <span class="truncate">Learn More</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  
+
+      <!-- Core Technologies Section -->
+      <section>
+        <div class="flex flex-col gap-10 px-4 py-10 @container">
+          <div class="flex flex-col gap-4">
+            <h1 class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+              Our Core Technologies
+            </h1>
+            <p class="text-white text-base font-normal leading-normal max-w-[720px]">
+              We specialize in developing advanced solutions across various domains to meet the evolving needs of modern businesses.
+            </p>
+          </div>
+          <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
+            <div class="flex flex-1 gap-3 rounded-lg border border-[#3b4754] bg-[#1b2127] p-4 flex-col">
+              <div class="text-white" data-icon="Cloud" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M160,40A88.09,88.09,0,0,0,81.29,88.67,64,64,0,1,0,72,216h88a88,88,0,0,0,0-176Zm0,160H72a48,48,0,0,1,0-96c1.1,0,2.2,0,3.29.11A88,88,0,0,0,72,128a8,8,0,0,0,16,0,72,72,0,1,1,72,72Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h2 class="text-white text-base font-bold leading-tight">Cloud Computing</h2>
+                <p class="text-[#9caaba] text-sm font-normal leading-normal">Scalable and reliable cloud infrastructure for seamless operations.</p>
+              </div>
+            </div>
+            <div class="flex flex-1 gap-3 rounded-lg border border-[#3b4754] bg-[#1b2127] p-4 flex-col">
+              <div class="text-white" data-icon="Database" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M128,24C74.17,24,32,48.6,32,80v96c0,31.4,42.17,56,96,56s96-24.6,96-56V80C224,48.6,181.83,24,128,24Zm80,104c0,9.62-7.88,19.43-21.61,26.92C170.93,163.35,150.19,168,128,168s-42.93-4.65-58.39-13.08C55.88,147.43,48,137.62,48,128V111.36c17.06,15,46.23,24.64,80,24.64s62.94-9.68,80-24.64ZM69.61,53.08C85.07,44.65,105.81,40,128,40s42.93,4.65,58.39,13.08C200.12,60.57,208,70.38,208,80s-7.88,19.43-21.61,26.92C170.93,115.35,150.19,120,128,120s-42.93-4.65-58.39-13.08C55.88,99.43,48,89.62,48,80S55.88,60.57,69.61,53.08ZM186.39,202.92C170.93,211.35,150.19,216,128,216s-42.93-4.65-58.39-13.08C55.88,195.43,48,185.62,48,176V159.36c17.06,15,46.23,24.64,80,24.64s62.94-9.68,80-24.64V176C208,185.62,200.12,195.43,186.39,202.92Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h2 class="text-white text-base font-bold leading-tight">Data Management</h2>
+                <p class="text-[#9caaba] text-sm font-normal leading-normal">Efficient data storage and management solutions for optimal performance.</p>
+              </div>
+            </div>
+            <div class="flex flex-1 gap-3 rounded-lg border border-[#3b4754] bg-[#1b2127] p-4 flex-col">
+              <div class="text-white" data-icon="ShieldCheck" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M208,40H48A16,16,0,0,0,32,56v58.78c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56H208ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.68l50.34-50.34a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h2 class="text-white text-base font-bold leading-tight">Cybersecurity</h2>
+                <p class="text-[#9caaba] text-sm font-normal leading-normal">Robust security measures to protect your digital assets.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-cyan-400">About STM</h2>
+          <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="about-content">
-                <div class="about-text">
-                    <p>Moz Dev is a pioneering technology company based in Mozambique, dedicated to transforming the digital landscape of our country. We specialize in creating innovative web solutions and applications that empower businesses and individuals.</p>
-                    <p>Our mission is to bring Mozambique into a new tech era through cutting-edge solutions and local expertise.</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <h3>100+</h3>
-                        <p>Projects Completed</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>50+</h3>
-                        <p>Clients Served</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>10+</h3>
-                        <p>Years of Experience</p>
-                    </div>
-                </div>
+              <h3 class="text-2xl font-bold mb-4 text-green-400">Our Vision</h3>
+              <p class="text-gray-300 mb-8">
+                To be a leading force in transforming Mozambique into a hub of technological innovation and progress.
+              </p>
+              <h3 class="text-2xl font-bold mb-4 text-green-400">Our Mission</h3>
+              <p class="text-gray-300 mb-8">
+                To drive technological development in Mozambique by delivering cutting-edge solutions, fostering innovation, and empowering communities through technology.
+              </p>
+              <div class="bg-gray-700 p-6 rounded-lg">
+                <h4 class="text-xl font-bold mb-3 text-cyan-400">Our Story</h4>
+                <p class="text-gray-300 italic">
+                  [Your Company Story - Share how STM was founded, key milestones, and what makes your team unique.]
+                </p>
+              </div>
             </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-gray-700 p-6 rounded-lg h-48 flex items-center justify-center">
+                <p class="text-gray-400 text-center">[Team Photo 1]</p>
+              </div>
+              <div class="bg-gray-700 p-6 rounded-lg h-48 flex items-center justify-center">
+                <p class="text-gray-400 text-center">[Team Photo 2]</p>
+              </div>
+              <div class="bg-gray-700 p-6 rounded-lg h-48 flex items-center justify-center">
+                <p class="text-gray-400 text-center">[Team Photo 3]</p>
+              </div>
+              <div class="bg-gray-700 p-6 rounded-lg h-48 flex items-center justify-center">
+                <p class="text-gray-400 text-center">[Team Photo 4]</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="project-gallery">
-                <div class="gallery-item active">
-                    <img src="https://via.placeholder.com/400x300" alt="E-commerce Platform">
-                    <div class="gallery-overlay">
-                        <h3>E-commerce Platform</h3>
-                        <p>A revolutionary shopping experience for Mozambican businesses</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Financial Management System">
-                    <div class="gallery-overlay">
-                        <h3>Financial Management System</h3>
-                        <p>Streamlining financial operations for local enterprises</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Education Portal">
-                    <div class="gallery-overlay">
-                        <h3>Education Portal</h3>
-                        <p>Modernizing education through digital solutions</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Healthcare System">
-                    <div class="gallery-overlay">
-                        <h3>Healthcare Management System</h3>
-                        <p>Modern healthcare solutions for Mozambique</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Transport Management">
-                    <div class="gallery-overlay">
-                        <h3>Transport Management System</h3>
-                        <p>Optimizing transportation logistics</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-controls">
-                <button class="gallery-prev"><i class="fas fa-chevron-left"></i></button>
-                <button class="gallery-next"><i class="fas fa-chevron-right"></i></button>
-            </div>
-            <a href="projects.html" class="cta-button">View All Projects</a>
+      <!-- Projects Gallery -->
+      <section id="projects" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-cyan-400">Our Projects</h2>
+          <div id="gallery-container" class="max-w-4xl mx-auto"></div>
         </div>
-    </section>
+      </section>
 
+      <!-- Join Us -->
+      <section class="relative bg-gray-900 text-white">
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-800 to-gray-900 opacity-50"></div>
+        <div class="container mx-auto px-6 py-20 relative z-10">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Ready to Transform Your Business?</h1>
+          <p class="text-lg md:text-xl mb-8">Join thousands of businesses leveraging TechCo's innovative solutions.</p>
+          <button class="bg-cyan-400 text-gray-900 px-6 py-3 rounded-md font-semibold hover:bg-cyan-500 transition-colors">Get Started</button>
+        </div>
+      </section>
 
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Moz Dev</h3>
-                    <p>Empowering Mozambique through technology</p>
+      <!-- Footer -->
+      <footer class="flex justify-center">
+        <div class="flex max-w-[960px] flex-1 flex-col">
+          <div class="flex flex-col gap-6 px-5 py-10 text-center @container">
+            <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+              <a class="text-[#9caaba] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+              <a class="text-[#9caaba] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+              <a class="text-[#9caaba] text-base font-normal leading-normal min-w-40" href="#">Contact Us</a>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4">
+              <a href="#">
+                <div class="text-[#9caaba]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                    ></path>
+                  </svg>
                 </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+              </a>
+              <a href="#">
+                <div class="text-[#9caaba]" data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+                    ></path>
+                  </svg>
                 </div>
-                <div class="footer-section">
-                    <h3>Follow Us</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+              </a>
+            </div>
+            <p class="text-[#9caaba] text-base font-normal leading-normal">© 2025 Mdigi Tech | All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Gallery React Component -->
+  <script type="text/babel">
+    const Gallery = () => {
+        const projects = [
+            {
+                title: "[Project 1 Name]",
+                description: "[Project 1 Description - Briefly explain what this project is about and its impact.]",
+                tech: "[Technologies Used]"
+            },
+            {
+                title: "[Project 2 Name]",
+                description: "[Project 2 Description - Briefly explain what this project is about and its impact.]",
+                tech: "[Technologies Used]"
+            },
+            {
+                title: "[Project 3 Name]",
+                description: "[Project 3 Description - Briefly explain what this project is about and its impact.]",
+                tech: "[Technologies Used]"
+            },
+            {
+                title: "[Project 4 Name]",
+                description: "[Project 4 Description - Briefly explain what this project is about and its impact.]",
+                tech: "[Technologies Used]"
+            }
+        ];
+        
+        const [currentIndex, setCurrentIndex] = React.useState(0);
+        
+        const nextProject = () => {
+            setCurrentIndex((prevIndex) => 
+                prevIndex === projects.length - 1 ? 0 : prevIndex + 1
+            );
+        };
+        
+        const prevProject = () => {
+            setCurrentIndex((prevIndex) => 
+                prevIndex === 0 ? projects.length - 1 : prevIndex - 1
+            );
+        };
+        
+        React.useEffect(() => {
+            const interval = setInterval(() => {
+                nextProject();
+            }, 5000);
+            return () => clearInterval(interval);
+        }, []);
+        
+        return (
+            <div className="relative">
+                <div className="bg-gray-800 rounded-xl p-8 shadow-2xl min-h-96 flex flex-col justify-between">
+                    <div>
+                        <h3 className="text-2xl font-bold text-cyan-400 mb-4">{projects[currentIndex].title}</h3>
+                        <p className="text-gray-300 mb-6">{projects[currentIndex].description}</p>
+                        <div className="bg-gray-700 inline-block px-4 py-2 rounded-lg">
+                            <p className="text-green-400 font-mono">{projects[currentIndex].tech}</p>
+                        </div>
+                    </div>
+                    <div className="flex justify-center mt-8 space-x-4">
+                        <button onClick={prevProject} className="bg-gray-700 hover:bg-gray-600 text-cyan-400 p-3 rounded-full transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <div className="flex space-x-2 items-center">
+                            {projects.map((_, index) => (
+                                <button 
+                                    key={index}
+                                    onClick={() => setCurrentIndex(index)}
+                                    className={`h-3 w-3 rounded-full ${index === currentIndex ? 'bg-cyan-400' : 'bg-gray-600'}`}
+                                />
+                            ))}
+                        </div>
+                        <button onClick={nextProject} className="bg-gray-700 hover:bg-gray-600 text-cyan-400 p-3 rounded-full transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-green-500 rounded-xl opacity-20 blur-sm -z-10"></div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Moz Dev. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        );
+    };
+    
+    ReactDOM.render(<Gallery />, document.getElementById('gallery-container'));
+  </script>
 
-    <script src="script.js"></script>
+  <!-- Scripts -->
+  <script>
+    // GSAP animations
+    gsap.registerPlugin(ScrollTrigger);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      gsap.from('nav', {
+        duration: 1,
+        y: -50,
+        opacity: 0,
+        ease: "power3.out"
+      });
+
+      gsap.from('#home h1', {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        delay: 0.3,
+        ease: "power3.out"
+      });
+
+      gsap.from('#home p', {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        delay: 0.6,
+        ease: "power3.out"
+      });
+
+      gsap.from('#home button', {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        delay: 0.9,
+        ease: "power3.out"
+      });
+
+      // Scroll animations for sections
+      gsap.utils.toArray('section').forEach(section => {
+        gsap.from(section, {
+          scrollTrigger: {
+            trigger: section,
+            start: "top 80%",
+            toggleActions: "play none none none"
+          },
+          opacity: 0,
+          y: 50,
+          duration: 1,
+          ease: "power3.out"
+        });
+      });
+    });
+  </script>
 </body>
 </html>
+                        toggleActions: "play none none none"
+                    },
+                    opacity: 0,
+                    y: 50,
+                    duration: 1,
+                    ease: "power3.out"
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
